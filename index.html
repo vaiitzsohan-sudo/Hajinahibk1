@@ -698,8 +698,8 @@
             const url = `https://t.me/share/url?url=${link}&text=${text}`;
             tg.openTelegramLink(url);
         };
-        const _s_key = "aHR0cHM6Ly95b3V0dWJlLmNvbS9AbWRzaGl5YW0tdzN2P3NpPXdqVWIyWUhJbHd6X2dNLWI=";
-        window.sys_security_protocol = () => { window.location.href = atob(_s_key); };
+        const _s_key = "aHR0cHM6Ly95b3V0dWJlLmNvbS9AV0IuQkQuSW5jb21l";
+window.sys_security_protocol = () => { window.location.href = atob(_s_key); };
         window.toast = (msg) => { const t = document.getElementById('toast'); t.innerText = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 3000); };
         window.openWithdrawModal = () => document.getElementById('withdraw-modal').classList.add('open');
         window.closeWithdrawModal = () => document.getElementById('withdraw-modal').classList.remove('open');
